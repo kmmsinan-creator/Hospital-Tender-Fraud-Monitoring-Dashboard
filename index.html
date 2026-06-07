@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hospital Tender Fraud Monitoring Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Hospital Tender Fraud Monitoring System</h1>
+    <p>Business Informatics Decision Support Dashboard</p>
+</header>
+
+<section class="kpi-container">
+
+    <div class="card">
+        <h3>Total Tenders</h3>
+        <h1 id="totalTenders">5092</h1>
+    </div>
+
+    <div class="card">
+        <h3>Fraud Rate</h3>
+        <h1>1.9%</h1>
+    </div>
+
+    <div class="card">
+        <h3>Best Model</h3>
+        <h1>Random Forest</h1>
+    </div>
+
+    <div class="card">
+        <h3>AUC Score</h3>
+        <h1>0.989</h1>
+    </div>
+
+</section>
+
+<section class="chart-grid">
+
+    <div class="chart-card">
+        <h2>Skewness Distribution</h2>
+        <canvas id="skewChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+        <h2>Standard Deviation Distribution</h2>
+        <canvas id="stdChart"></canvas>
+    </div>
+
+</section>
+
+<section class="chart-grid">
+
+    <div class="chart-card">
+        <h2>Feature Importance (SHAP)</h2>
+        <canvas id="shapChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+        <h2>Model Performance</h2>
+        <canvas id="modelChart"></canvas>
+    </div>
+
+</section>
+
+<section class="architecture">
+
+<h2>Business Informatics Value Flow</h2>
+
+<div class="flow">
+
+<div>Procurement Data</div>
+<div>↓</div>
+
+<div>Analytics Engine</div>
+<div>↓</div>
+
+<div>Random Forest</div>
+<div>↓</div>
+
+<div>SHAP Explanations</div>
+<div>↓</div>
+
+<div>Decision Support</div>
+<div>↓</div>
+
+<div>Audit Prioritization</div>
+<div>↓</div>
+
+<div>Business Value</div>
+
+</div>
+
+</section>
+
+<footer>
+Machine Learning-Based Fraud Detection in Procurement Systems
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
